@@ -761,6 +761,7 @@ p{
 //--//-->   PORTFOLIO
 ======================================*/
 
+
 .work-box {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
@@ -878,6 +879,11 @@ p{
 /*======================================
 //--//-->   BLOG
 ======================================*/
+
+.card{
+  margin-bottom: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.6);
+}
 
 .card-blog .card-body {
   position: relative;
@@ -1075,6 +1081,13 @@ p{
 }
 
 /* portfolio */
+
+@media (min-width: 767px) {
+  
+  .proj-card-blog {
+    margin-bottom: 3rem;
+  }
+}
 .hover-wrapper {
   overflow: hidden;
 }
