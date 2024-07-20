@@ -82,7 +82,7 @@ p{
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #000;
 }
 
 .overlay-mf {
@@ -98,6 +98,7 @@ p{
 .paralax-mf {
   position: relative;
   padding: 8rem 0;
+  margin-top: 5rem;
 }
 
 .display-table {
@@ -397,6 +398,8 @@ p{
   background-color: transparent;
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-left: 0;
 }
 
@@ -1080,6 +1083,23 @@ p{
   color: #fff;
 }
 
+/*ICONS */
+#skills .icons-container {
+	margin-top: 0.738rem;
+  margin-bottom: 5rem;
+  padding-top: 20px;
+  justify-content: center;
+  height: 50vh;
+
+}
+
+ .icons-container img {
+	width: 50px;
+	margin-left: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+
 /* portfolio */
 
 @media (min-width: 767px) {
@@ -1133,6 +1153,139 @@ p{
 
 /* /portfolio */
 
+/* Exp */
+
+.about-experience__timeline {
+  margin-top: 1rem;
+}
+
+.about-experience__timeline .column:first-child {
+  padding-right: 40px;
+}
+
+.about-experience__timeline .column:last-child {
+  padding-left: 40px;
+}
+
+.timeline {
+  padding-top: 3rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.12);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.timeline::after {
+  content: "";
+  display: block;
+  width: 5.6rem;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.12);
+  position: absolute;
+  left: 1px;
+  top: 0;
+}
+
+.timeline__icon-wrap {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: -2.2rem;
+  left: 5.6rem;
+}
+
+.timeline__icon {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.timeline__icon--work {
+  background-image: url(../img/exp/icon-briefcase.svg);
+}
+
+
+.timeline__block {
+  position: relative;
+  padding-left: 5.6rem;
+  padding-bottom: .8rem;
+  margin-top: 2rem;
+  margin-right: 2.8rem;
+  min-height: 15rem;
+}
+
+.timeline .timeline__block:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__bullet {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 4.8rem;
+  background-color: #000000;
+  position: absolute;
+  left: -1px;
+  top: 8px;
+}
+
+.timeline__header {
+  margin-bottom: 3.2rem;
+}
+
+.timeline__header .timeline__timeframe,
+.timeline__header h5 {
+  font-family: "Roboto", sans-serif;
+}
+
+.timeline .timeline__desc{
+  margin-top: 2px;
+}
+
+.timeline__header .timeline__timeframe {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.714;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  margin-bottom: .8rem;
+  color: #000000;
+}
+
+.timeline__header h3 {
+  margin-bottom: 0;
+}
+
+.timeline__header h5 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.333;
+  margin-top: 0;
+}
+
+
+
+/*Exp end*/
+
 /*======================================
 //--//-->   CONTACT
 ======================================*/
@@ -1167,43 +1320,6 @@ footer .credits a {
   color: #fff;
 }
 
-/*======================================
-//--//-->   CONtaCT FORM
-======================================*/
-
-#sendmessage {
-  color: #0078ff;
-  border: 1px solid #0078ff;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#sendmessage.show,
-#errormessage.show,
-.show {
-  display: block;
-}
-
-.validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
 
 /*======================================
 //--//-->   BUTTON
